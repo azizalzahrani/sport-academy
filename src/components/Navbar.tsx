@@ -95,22 +95,23 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab, openBoo
             onClick={() => handleNavClick('home')}
             className="flex items-center gap-3.5 cursor-pointer group select-none"
           >
-            <div className="relative w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-400 via-teal-500 to-cyan-500 p-[1.5px] shadow-lg shadow-emerald-500/20 group-hover:shadow-emerald-400/40 group-hover:scale-105 transition-all duration-300">
-              <div className="w-full h-full bg-[#080D1A] rounded-[10px] flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity" />
-                <Trophy className="w-6 h-6 text-emerald-400 group-hover:rotate-12 transition-transform duration-300" />
+            <div className="relative w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-400 via-teal-400 to-cyan-500 p-[1.5px] shadow-lg shadow-emerald-500/20 group-hover:shadow-emerald-400/50 group-hover:scale-105 transition-all duration-300">
+              <div className="w-full h-full bg-[#080D1A] rounded-[14px] flex items-center justify-center relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/20 via-transparent to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <Trophy className="w-6 h-6 text-emerald-400 group-hover:rotate-12 transition-transform duration-300 drop-shadow-[0_0_8px_rgba(52,211,153,0.5)]" />
               </div>
             </div>
             <div>
-              <div className="flex items-baseline gap-2">
-                <span className="text-2xl font-black tracking-tight text-white font-heading bg-gradient-to-r from-white via-slate-100 to-emerald-200 bg-clip-text text-transparent">
+              <div className="flex items-center gap-2">
+                <span className="text-2xl sm:text-3xl font-black tracking-tight font-heading bg-gradient-to-r from-white via-slate-100 to-emerald-200 bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(16,185,129,0.3)]">
                   أَوْج
                 </span>
-                <span className="text-[10px] font-extrabold text-emerald-400 uppercase tracking-widest bg-emerald-500/10 px-1.5 py-0.5 rounded border border-emerald-500/20">
+                <span className="inline-flex items-center gap-1.5 bg-gradient-to-r from-emerald-500/20 via-teal-500/15 to-cyan-500/20 text-emerald-300 text-[10px] sm:text-[11px] font-black uppercase tracking-widest px-2.5 py-0.5 rounded-full border border-emerald-400/40 shadow-[0_0_12px_rgba(52,211,153,0.25)] group-hover:border-emerald-300 group-hover:shadow-[0_0_16px_rgba(52,211,153,0.4)] transition-all">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                   OWJ
                 </span>
               </div>
-              <span className="text-[11px] block text-slate-400 font-medium -mt-0.5 group-hover:text-slate-300 transition-colors">
+              <span className="text-[11px] block text-slate-300 font-medium -mt-0.5 group-hover:text-white transition-colors">
                 أكاديمية أَوْج الرياضية - جدة
               </span>
             </div>

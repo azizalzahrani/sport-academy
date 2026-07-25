@@ -46,13 +46,23 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, openLegalModal, op
           
           {/* Col 1: Brand Info */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-3 cursor-pointer" onClick={() => handleNav('home')}>
-              <div className="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center text-slate-950 font-black">
-                <Trophy className="w-5 h-5" />
+            <div className="flex items-center gap-3.5 cursor-pointer group" onClick={() => handleNav('home')}>
+              <div className="relative w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-400 via-teal-400 to-cyan-500 p-[1.5px] shadow-lg shadow-emerald-500/20 group-hover:shadow-emerald-400/50 group-hover:scale-105 transition-all duration-300">
+                <div className="w-full h-full bg-[#080D1A] rounded-[14px] flex items-center justify-center relative overflow-hidden">
+                  <Trophy className="w-6 h-6 text-emerald-400 group-hover:rotate-12 transition-transform duration-300 drop-shadow-[0_0_8px_rgba(52,211,153,0.5)]" />
+                </div>
               </div>
               <div>
-                <span className="text-xl font-black text-white font-heading block">أكاديمية أَوْج الرياضية</span>
-                <span className="text-[11px] text-emerald-400 font-semibold">{ACADEMY_INFO.englishName}</span>
+                <div className="flex items-center gap-2">
+                  <span className="text-xl sm:text-2xl font-black font-heading bg-gradient-to-r from-white via-slate-100 to-emerald-200 bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(16,185,129,0.3)]">
+                    أكاديمية أَوْج الرياضية
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 bg-gradient-to-r from-emerald-500/20 via-teal-500/15 to-cyan-500/20 text-emerald-300 text-[10px] font-black uppercase tracking-widest px-2.5 py-0.5 rounded-full border border-emerald-400/40 shadow-[0_0_12px_rgba(52,211,153,0.25)]">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                    OWJ
+                  </span>
+                </div>
+                <span className="text-[11px] text-slate-400 font-medium block mt-0.5">{ACADEMY_INFO.englishName}</span>
               </div>
             </div>
 
