@@ -135,7 +135,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, openLegalModal, op
           <div className="flex items-center gap-2">
             <span className="text-slate-400">تصميم وتطوير بواسطة</span>
             <a 
-              href="https://azionlabs.com" 
+              href="https://azion-labs.com/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 font-bold text-emerald-400 hover:text-emerald-300 transition-colors bg-emerald-500/10 hover:bg-emerald-500/20 px-2.5 py-1 rounded-lg border border-emerald-500/20 shadow-sm"
