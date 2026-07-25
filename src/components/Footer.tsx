@@ -127,10 +127,25 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, openLegalModal, op
 
         </div>
 
-        {/* Bottom Rights Bar */}
-        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-300">
+        {/* Bottom Rights & Attribution Bar */}
+        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>جميع الحقوق محفوظة © 2026 لأكاديمية أَوْج الرياضية - جدة، المملكة العربية السعودية.</p>
-          <div className="flex items-center gap-4 text-slate-400">
+          
+          {/* Designed by AZION Labs */}
+          <div className="flex items-center gap-2">
+            <span className="text-slate-400">تصميم وتطوير بواسطة</span>
+            <a 
+              href="https://azionlabs.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 font-bold text-emerald-400 hover:text-emerald-300 transition-colors bg-emerald-500/10 hover:bg-emerald-500/20 px-2.5 py-1 rounded-lg border border-emerald-500/20 shadow-sm"
+            >
+              <span className="dir-ltr font-mono tracking-tight">AZION Labs</span>
+              <span className="text-[10px]">↗</span>
+            </a>
+          </div>
+
+          <div className="flex items-center gap-3 text-slate-400">
             <span className="hover:text-emerald-400 transition-colors cursor-pointer">انستغرام</span>
             <span>•</span>
             <span className="hover:text-emerald-400 transition-colors cursor-pointer">سناب شات</span>
